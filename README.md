@@ -20,9 +20,9 @@ And just in case you missed the significance, here's another example:
     
     var destinations = [];
     
-    if (useDest1) { destinations.push( gulp.dest('dest1'); }
-    if (useDest2) { destinations.push( gulp.dest('dest2'); }
-    if (useDest3) { destinations.push( gulp.dest('dest3'); }
+    if (useDest1) { destinations.push( gulp.dest('dest1') ); }
+    if (useDest2) { destinations.push( gulp.dest('dest2') ); }
+    if (useDest3) { destinations.push( gulp.dest('dest3') ); }
     
     // Do we have 1, 2, or 3 destinations?
     // Why should I have to care at this point?
