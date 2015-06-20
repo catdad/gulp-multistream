@@ -1,6 +1,6 @@
 {
   "name": "gulp-multistream",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "scripts": {
     "test": "node test.js"
@@ -27,5 +27,6 @@
   "bugs": {
     "url": "https://github.com/catdad/gulp-multistream/issues"
   },
-  "homepage": "https://github.com/catdad/gulp-multistream"
+  "homepage": "https://github.com/catdad/gulp-multistream",
+  "description": "Write data to multiple streams in the pipeline, at the same time."
 }
