@@ -1,0 +1,13 @@
+{
+  "name": "gulp-multistream",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "Kiril Vatev <vatev.1@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "through2": "~2.0.0"
+  }
+}
