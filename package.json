@@ -28,5 +28,6 @@
     "url": "https://github.com/catdad/gulp-multistream/issues"
   },
   "homepage": "https://github.com/catdad/gulp-multistream",
-  "description": "Write data to multiple streams in the pipeline, at the same time."
+  "description": "Write data to multiple streams in the pipeline, at the same time.",
+  "engine": "node >= 0.10"
 }
