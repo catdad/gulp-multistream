@@ -4,37 +4,38 @@ var multistream = require('./index.js');
 
 var es = require('event-stream');
 var File = require('vinyl');
+var assert = require('assert');
 
 var fakeData = 'llama';
 
-function testStream(file, outputname) {
-    console.log(outputname, ': isStream:', file.isStream());
-    
+function testStream(file) {
+    assert(file.isStream(), 'should be a stream');
+
     file.contents.pipe(es.wait(function(err, data) {
-        console.log(outputname, ': data:', data === fakeData);
+        assert.strictEqual(data, fakeData, data + ' should have been ' + fakeData);
     }));
 }
 
-function testBuffer(file, outputname) {
-    console.log(outputname, ': isBuffer:', file.isBuffer());
+function testBuffer(file) {
+    assert(file.isBuffer(), 'something here');
     
     var data = file.contents.toString('utf8');
-    console.log(outputname, ': data:', data === fakeData);
+    assert.strictEqual(data, fakeData, data + ' should have been ' + fakeData);
 }
 
 function test(input, out1, out2, testFunc) {
     var multi = multistream(out1, out2);
 
     out1.on('data', function(file) {
-        testFunc(file, 'out1');
+        testFunc(file);
     }).on('end', function() {
-        console.log('out1 :', 'end');
+        console.log('end');
     });
 
     out2.on('data', function(file) {
-        testFunc(file, 'out2');
+        testFunc(file);
     }).on('end', function() {
-        console.log('out2 :', 'end');
+        console.log('end');
     });
 
     multi.write(input);
