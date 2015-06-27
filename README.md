@@ -1,14 +1,17 @@
 # gulp-multistream
 
-[![Downloads][1]][2] [![Version][3]][2] [![ISC License][4]][5] 
+[![Build][1]][2] [![Downloads][3]][4] [![Version][5]][4] [![ISC License][6]][7]
 
-[1]: https://img.shields.io/npm/dm/gulp-multistream.svg?style=flat
-[2]: https://www.npmjs.com/package/gulp-multistream
+[1]: https://travis-ci.org/catdad/gulp-multistream.svg?branch=master
+[2]: https://travis-ci.org/catdad/gulp-multistream
 
-[3]: https://img.shields.io/npm/v/gulp-multistream.svg
+[3]: https://img.shields.io/npm/dm/gulp-multistream.svg?style=flat
+[4]: https://www.npmjs.com/package/gulp-multistream
 
-[4]: https://img.shields.io/npm/l/gulp-multistream.svg?style=flat
-[5]: http://opensource.org/licenses/ISC
+[5]: https://img.shields.io/npm/v/gulp-multistream.svg
+
+[6]: https://img.shields.io/npm/l/gulp-multistream.svg?style=flat
+[7]: http://opensource.org/licenses/ISC
 
 ### Install:
 
