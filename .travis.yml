@@ -1,8 +1,12 @@
 language: node_js
 node_js:
+  - "5.3"
+  - "4.2"
+  - "4.0"
   - "0.12"
   - "0.10"
   - "iojs"
+  - "node"
 addons:
   code_climate:
     repo_token: f353d09beed66f6bbb15d9f5c0661332c53dac0c1e89a7b4fa564166a2a8fe52
