@@ -41,6 +41,9 @@
     "reporter": [
       "lcov",
       "text"
-    ]
+    ],
+    "statements": 100,
+    "branches": 100,
+    "check-coverage": true
   }
 }
