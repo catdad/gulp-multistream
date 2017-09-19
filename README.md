@@ -49,16 +49,16 @@ And just in case you missed the significance, here's another example:
 ```javascript
 var multistream = require('gulp-multistream');
 
-var destinations = [];
-
-if (useDest1) { destinations.push( gulp.dest('dest1') ); }
-if (useDest2) { destinations.push( gulp.dest('dest2') ); }
-if (useDest3) { destinations.push( gulp.dest('dest3') ); }
-
-// Do we have 1, 2, or 3 destinations?
-// Why should I have to care at this point?
-
 gulp.task('doStuff', function() {
+    var destinations = [];
+
+    if (useDest1) { destinations.push( gulp.dest('dest1') ); }
+    if (useDest2) { destinations.push( gulp.dest('dest2') ); }
+    if (useDest3) { destinations.push( gulp.dest('dest3') ); }
+
+    // Do we have 1, 2, or 3 destinations?
+    // Why should I have to care at this point?
+
     return gulp.src('myfile.js')
         .pipe(doTheStuff())
         .pipe(multistream.apply(undefined, destinations));
