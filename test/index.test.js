@@ -11,6 +11,8 @@ var multistream = require('../');
 describe('[index]', function () {
     var fakeData = 'llama';
 
+    function noop () {}
+
     function slowStream(time) {
         return through.obj(function (obj, enc, cb) {
             setTimeout(function () {
@@ -21,7 +23,8 @@ describe('[index]', function () {
 
     function wait(stream) {
         return function (next) {
-            stream.pipe(es.wait(next));
+            stream.on('data', noop);
+            eos(stream, next);
         };
     }
 
