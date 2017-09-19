@@ -125,7 +125,6 @@ describe('[index]', function () {
             waitOrder('multi', multi)
         ], function (err) {
             expect(order).to.deep.equal(['out1', 'out2', 'multi']);
-            console.log(order);
             done(err);
         });
     });
