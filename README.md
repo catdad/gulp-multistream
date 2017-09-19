@@ -1,22 +1,27 @@
 # gulp-multistream
 
-[![Build][1]][2] [![Test Coverage][3]][4] [![Code Climate][5]][6] [![Downloads][7]][8] [![Version][9]][8] [![ISC License][10]][11] [![Analytics][12]][13]
+[![travis][travis.svg]][travis.link]
+[![cov-codeclimate][cov-codeclimate.svg]][cov-codeclimate.link]
+[![score-codeclimate][score-codeclimate.svg]][score-codeclimate.link]
+[![npm-downloads][npm-downloads.svg]][npm.link]
+[![npm-version][npm-version.svg]][npm.link]
+[![dm-david][dm-david.svg]][dm-david.link]
+[![ISC License][10]][11]
+[![Analytics][12]][13]
 
-[1]: https://img.shields.io/travis/catdad/gulp-multistream/master.svg?style=flat-square
-[2]: https://travis-ci.org/catdad/gulp-multistream
+[travis.svg]: https://travis-ci.org/catdad/gulp-multistream.svg?branch=master
+[travis.link]: https://travis-ci.org/catdad/gulp-multistream
+[cov-codeclimate.svg]: https://codeclimate.com/github/catdad/gulp-multistream/badges/coverage.svg
+[cov-codeclimate.link]: https://codeclimate.com/github/catdad/gulp-multistream/coverage
+[score-codeclimate.svg]: https://codeclimate.com/github/catdad/gulp-multistream/badges/gpa.svg
+[score-codeclimate.link]: https://codeclimate.com/github/catdad/gulp-multistream
+[npm-downloads.svg]: https://img.shields.io/npm/dm/gulp-multistream.svg
+[npm.link]: https://www.npmjs.com/package/gulp-multistream
+[npm-version.svg]: https://img.shields.io/npm/v/gulp-multistream.svg
+[dm-david.svg]: https://david-dm.org/catdad/gulp-multistream.svg
+[dm-david.link]: https://david-dm.org/catdad/gulp-multistream
 
-[3]: https://img.shields.io/codeclimate/coverage/github/catdad/gulp-multistream.svg?style=flat-square
-[4]: https://codeclimate.com/github/catdad/gulp-multistream/coverage
-
-[5]: https://img.shields.io/codeclimate/github/catdad/gulp-multistream.svg?style=flat-square
-[6]: https://codeclimate.com/github/catdad/gulp-multistream
-
-[7]: https://img.shields.io/npm/dm/gulp-multistream.svg?style=flat-square
-[8]: https://www.npmjs.com/package/gulp-multistream
-
-[9]: https://img.shields.io/npm/v/gulp-multistream.svg?style=flat-square
-
-[10]: https://img.shields.io/npm/l/gulp-multistream.svg?style=flat-square
+[10]: https://img.shields.io/npm/l/gulp-multistream.svg
 [11]: http://opensource.org/licenses/ISC
 
 [12]: https://ga-beacon.appspot.com/UA-17159207-7/gulp-multistream/readme?flat
