@@ -4,6 +4,7 @@ var es = require('event-stream');
 var through = require('through2');
 var File = require('vinyl');
 var async = require('async');
+var eos = require('end-of-stream');
 
 var multistream = require('../');
 
@@ -126,6 +127,36 @@ describe('[index]', function () {
         ], function (err) {
             expect(order).to.deep.equal(['out1', 'out2', 'multi']);
             done(err);
+        });
+    });
+
+    it('passes through all files', function (done) {
+        var multidata = [];
+        var out1 = slowStream(1);
+        var out2 = slowStream(2);
+
+        var inputFile = new File({ contents: new Buffer(fakeData) });
+        var multi = doMultiWrite(inputFile, out1, out2);
+
+        async.parallel([
+            wait(out1),
+            wait(out2),
+            function (next) {
+                multi.on('data', function (chunk) {
+                    multidata.push(chunk);
+                });
+
+                eos(multi, next);
+            }
+        ], function (err) {
+            if (err) {
+                return done(err);
+            }
+
+            expect(multidata).to.have.lengthOf(1);
+            expect(multidata).to.deep.equal([inputFile]);
+
+            done();
         });
     });
 });
